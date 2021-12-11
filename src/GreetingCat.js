@@ -1,20 +1,16 @@
 import React from "react";
+import Page1 from "./Page1";
 
-export default function GreetingCat(props) {
-  const { greeting } = props.match.params;
-  const greetingCatUrl = `https://cataas.com/cat/says/${greeting}`;
-
+export default function GreetingCat() {
   return (
     <div>
       <header>
         <h3>Greet me</h3>
-        {!greeting ? (
-          <div>Needs a greeting</div>
-        ) : (
+        
           <div>
-            <img src={greetingCatUrl} width="400px" alt="Cat" />
+            <Page1/>
           </div>
-        )}
+     
       </header>
     </div>
   );
